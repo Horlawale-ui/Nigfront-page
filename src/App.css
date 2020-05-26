@@ -1,38 +1,110 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(./image/nig1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container-content{
+  padding: 3% 5%;
+  height: 100vh;
+}
+.logo{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.mainnav .navbar .navbar-nav .nav-item .nav-link{
+  padding:  0% 30%;
+  color: white;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.center-video h1 {
+  font-size: 55px;
+}
+.center-video .video h4 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.video {
+  padding: 3.5rem 0;
+}
+.video h4 {
+  margin-left: 10px;
+}
+.profile {
+  position: absolute; 
+  bottom: 3%;
+  left: 5%;
+}
+icon{
+  margin-right: 25px;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+.profileaside {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  padding: 30px;
+  display: flex;
+  background-color: rgba(90, 90, 90, 0.47);
+}
+.images img{
+  width: 170px;
+  height: 110px;
+  margin-left: 30px;
+}
+.text {
+  font-size: 18px;
+  font-weight: 300;
+}
+.home_places_text p {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Screens with width of 1200px and above*/
+@media only screen and (min-width: 1200px){
 }
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+}
+
+/* Small phones to small tablets: from 632px to 767px */
+@media only screen and (max-width: 767px){
+   
+  .center-video h1{
+    font-size: 55px;
+  }
+  .logo{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Small phones: from 481px to 631px */
+@media only screen and (max-width: 631px){
+  .profileaside{
+        display: none;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+  .center{
+        transform: translate(-20%, -50%);
+    }
+    .center-video h1{
+        font-size: 35px;
+    }
+}
+
